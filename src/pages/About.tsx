@@ -11,10 +11,19 @@ export default function About() {
         {canonical && <link rel="canonical" href={canonical} />}
       </Helmet>
 
-      <header className="max-w-3xl">
-        <h1 className="font-heading text-3xl font-bold">About Scientific Vision Centre (SEVIC)</h1>
-        <p className="mt-3 text-muted-foreground">
-          Established on 1 March 2013 in New Delhi and registered under the Societies Registration Act XXI of 1860 (Govt. of NCT of Delhi), SEVIC is a Non-Governmental, Non-Political, Non-Religious, Non-Sectarian, Non-Profit Organisation dedicated to the welfare of people across the North Eastern states of India.
+      <div className="flex flex-col items-center mb-8">
+        <img
+          src="/logo-scientific.jpg"
+          alt="SEVIC Logo"
+          className="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-lg border-4 border-white bg-white"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
+      </div>
+
+      <header className="max-w-3xl mx-auto">
+        <h1 className="font-heading text-3xl font-bold text-center">About Scientific Vision Centre (SEVIC)</h1>
+        <p className="mt-3 text-muted-foreground text-center">
+          <strong>SCIENTIFIC VISION CENTRE (SEVIC)</strong>, Arjun Nagar, Safdarjung Enclave, New Delhi is a Non-Governmental, Non-political, Non-Religious, Non-Sectarian, Non-Profit making Voluntary Organisation working nationwide, especially in the North Eastern States. It was established on 1st March, 2013 by a group of likeminded social workers and was registered under Society Registration Act XXI of 1860, Government of NCT of Delhi vide Registration no. S/ND/297/2013 dated 31st July, 2013 and also registered PAN NO. ABZAS8847C.
         </p>
       </header>
 
@@ -33,7 +42,7 @@ export default function About() {
         </article>
       </section>
 
-      <section className="mt-10 grid gap-8 md:grid-cols-2">
+      {/* <section className="mt-10 grid gap-8 md:grid-cols-2">
         <article className="rounded-xl border p-6">
           <h3 className="font-semibold">Head Office</h3>
           <p className="mt-2 text-sm text-muted-foreground">269-A, Upper Ground Floor, Arjun Nagar, Safdarjung Enclave, New Delhi-110029</p>
@@ -42,7 +51,7 @@ export default function About() {
           <h3 className="font-semibold">Regional Office</h3>
           <p className="mt-2 text-sm text-muted-foreground">Wangbal Maning Leikai, Thoubal District, Manipur-795138</p>
         </article>
-      </section>
+      </section> */}
     </main>
   );
 }

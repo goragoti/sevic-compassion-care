@@ -17,7 +17,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-md bg-primary/10 ring-1 ring-primary/20" aria-hidden />
+          <img
+            src="/logo-scientific.jpg"
+            alt="SEVIC Logo"
+            className="h-8 w-8 object-contain rounded-md shadow-sm"
+            aria-hidden="true"
+          />
           <span className="font-heading text-lg font-semibold">SEVIC</span>
         </Link>
 
